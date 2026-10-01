@@ -6,11 +6,11 @@ Naam: (jouw naam)
 
 Welke elementen raakt elke selector? Eén zin per selector.
 
-- a. `header nav ul li a`: 
-- b. `article > p`: 
-- c. `.uren li:nth-child(3)`: 
-- d. `h2 ~ p`: 
-- e. `.rassen li:first-child`: 
+- a. `header nav ul li a`: alle links uit de lijst in de navbar in de header
+- b. `article > p`: de directe kinderen van article die een paragraaf zijn
+- c. `.uren li:nth-child(3)`: in de uren tabel het 3de item
+- d. `h2 ~ p`: elke paragraaf na een h2 (in dezelfde ouder)
+- e. `.rassen li:first-child`: in de rassen tabel het eerste item
 
 ## 3. Voorspel, dan kijk
 
