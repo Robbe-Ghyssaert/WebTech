@@ -1,0 +1,48 @@
+/* stijl.css - labo 3, slogan (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+  --Tekst: #282827;
+  --Geel: #fccc00;
+}
+
+/* === your rules === */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 40rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: var(--Tekst);
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h2 span {
+  border-bottom: var(--Geel) solid 14px;
+  border-radius: 0 0 50% 50%;
+}
+
+p {
+  margin: 25px 0;
+  font-size: 1.1rem;
+}
+
+a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 0.7rem;
+  padding: 8px 12px;
+  border-radius: 10px;
+  &:hover,
+  &:focus {
+    background-color: #333333;
+  }
+}
