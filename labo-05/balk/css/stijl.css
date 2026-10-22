@@ -1,0 +1,91 @@
+/* stijl.css - labo 5, balk (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+  --papier: #f8f7f5;
+  --inkt: #1a1a1a;
+  --gedempt: #6b6b6b;
+  --balk: #000000;
+}
+
+/* === your rules === */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 100%;
+  top: 0;
+  position: sticky;
+  display: flex;
+  background-color: var(--balk);
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  height: 3.5rem;
+  padding: 0 2rem;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 1.5rem;
+}
+
+header ul a {
+  color: #9a9a9a;
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  &:active,
+  &:hover {
+    color: #ffff;
+  }
+}
+
+main {
+  color: var(--inkt);
+  max-width: 44rem;
+  padding: 0 2rem;
+  line-height: 1.6;
+}
+
+main ol a {
+  color: var(--inkt);
+}
+
+main h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 2.5rem;
+}
+
+main h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 1.75rem;
+}
+
+main section {
+  margin: 3rem 0;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--balk);
+  width: 100%;
+  color: #9a9a9a;
+  font-size: 0.875rem;
+}

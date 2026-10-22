@@ -1,0 +1,85 @@
+/* stijl.css - labo 5, citaten (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+  --Kleur-blauw: #1e5db8;
+  --Kleur-roze: #e88bb4;
+  --Kleur-rood: #c51f2a;
+  --Kleur-oranje: #d98c1a;
+  --Kleur-groen: #3b7a2a;
+  --Kleur-salie: #8fb89a;
+  --Kleur-paars: #7b4fa3;
+  --Kleur-grijs: #6b6b6b;
+}
+
+/* === your rules === */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.citaten {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.citaat {
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 17rem;
+  padding: 0.5rem 0 1rem 1rem;
+  border-left: 0.5rem solid black;
+}
+
+.citaat p {
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.citaat cite {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.875rem;
+}
+
+.blauw {
+  border-color: var(--Kleur-blauw);
+  color: var(--Kleur-blauw);
+}
+
+.roze {
+  border-color: var(--Kleur-roze);
+  color: var(--Kleur-roze);
+}
+
+.rood {
+  border-color: var(--Kleur-rood);
+  color: var(--Kleur-rood);
+}
+
+.oranje {
+  border-color: var(--Kleur-oranje);
+  color: var(--Kleur-oranje);
+}
+
+.groen {
+  border-color: var(--Kleur-groen);
+  color: var(--Kleur-groen);
+}
+
+.salie {
+  border-color: var(--Kleur-salie);
+  color: var(--Kleur-salie);
+}
+
+.paars {
+  border-color: var(--Kleur-paars);
+  color: var(--Kleur-paars);
+}
+
+.grijs {
+  border-color: var(--Kleur-grijs);
+  color: var(--Kleur-grijs);
+}

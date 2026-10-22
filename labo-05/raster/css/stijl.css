@@ -1,0 +1,88 @@
+/* stijl.css - labo 5, raster (reset.css is linked before this file) */
+/* De ontwerper gaf je mee: de vlakken zijn #e9493f (a), #edd24a (b), #072f55 (c), #52a51a (d),
+#efaad9 (e), #a5f129 (f), #ebc47a (g) en #e8882c (h), elk met zijn letter als class; de letter
+staat in de rechterbovenhoek, wit, 1.5rem, in Arial, met 0.5rem boven en 0.75rem rechts; het
+raster vult het venster met 1rem tussen de vlakken en 1rem aan de rand. */
+
+/* === tokens === */
+:root {
+  --ColorA: #e9493f;
+  --ColorB: #edd24a;
+  --ColorC: #072f55;
+  --ColorD: #52a51a;
+  --ColorE: #efaad9;
+  --ColorF: #a5f129;
+  --ColorG: #ebc47a;
+  --ColorH: #e8882c;
+}
+
+/* === your rules === */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.raster {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  min-height: 100vh;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+.vlak {
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  color: white;
+  text-align: end;
+  padding: 0.7rem;
+}
+
+.a {
+  background-color: var(--ColorA);
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+
+.b {
+  background-color: var(--ColorB);
+  grid-column: 4/4;
+  grid-row: 1/1;
+}
+
+.c {
+  background-color: var(--ColorC);
+  grid-column: 1/1;
+  grid-row: 2/2;
+}
+
+.d {
+  background-color: var(--ColorD);
+  grid-column: 2/2;
+  grid-row: 2/2;
+}
+
+.e {
+  background-color: var(--ColorE);
+  grid-column: 3/3;
+  grid-row: 2/2;
+}
+
+.f {
+  background-color: var(--ColorF);
+  grid-column: 4/4;
+  grid-row: 2/2;
+}
+
+.g {
+  background-color: var(--ColorG);
+  grid-column: 1/1;
+  grid-row: 3/3;
+}
+
+.h {
+  background-color: var(--ColorH);
+  grid-column: 4/4;
+  grid-row: 3/3;
+}
